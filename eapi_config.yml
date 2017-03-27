@@ -1,0 +1,10 @@
+- hosts: veos-nodes
+  connection: local
+  tasks:
+  - name: config vlan
+    eos_config:
+      provider: "{{ eos_connection }}"
+      lines:
+      - vlan 10
+      - vlan 11
+  

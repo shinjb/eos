@@ -1,0 +1,8 @@
+
+eos_connection:
+  host: "{{ inventory_hostname }}"
+  username: admin
+  password: admin
+  transport: eapi
+  use_ssl: no
+  authorize: yes

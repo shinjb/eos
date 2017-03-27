@@ -1,0 +1,7 @@
+- hosts: veos-nodes
+  connection: local
+  tasks:
+  - eos_command:
+      provider: "{{ eos_connection }}"
+      commands: "show version"
+
